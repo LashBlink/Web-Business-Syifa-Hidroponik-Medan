@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.navbar-brand span {
+  padding: 0;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+  float: center;
+}
+
+.navbar-nav li a {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* ----------------- */
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  color: #444;
+  padding: 0 0 10px;
+}
+
+h2,
+h3 {
+  font-size: 18px;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  text-align: left;
+  background: rgb(53, 125, 44);
+  background: linear-gradient(
+    180deg,
+    rgba(53, 125, 44, 1) 27%,
+    rgba(102, 197, 89, 1) 100%
+  );
+
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#banner > .banner > .container > img {
+  margin-bottom: 30px;
+}
+
+#banner > .banner > .container button {
+  background-color: white;
+  color: green;
+  top: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.success {
+  border-color: #04aa6d;
+  color: green;
+  border-radius: 5px;
+}
+
+.wave {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+}
+
+hr {
+  height: 100px;
+  width: 30%;
+}
+
+.subscribe {
+  width: 150px;
+}
+
+.icon-footer {
+  width: 35px;
+}
+
+.icon-footer-squer {
+  width: 30px;
+}
