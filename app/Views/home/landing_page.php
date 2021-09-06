@@ -194,9 +194,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-green">
+    <footer class="footer">
         <div class="container">
-            <div class="row mt-5 mb-5">
+            <div class="row pt-5 pb-5">
                 <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                     <!-- <ul class="list-inline mb-2">
                         <li class="list-inline-item"><a href="#!">About</a></li>
@@ -207,7 +207,7 @@
                         <li class="list-inline-item">⋅</li>
                         <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
                     </ul> -->
-                    <p class="text-muted small mb-4 mb-lg-0">JL. Bromo Lr. Amal No. 11
+                    <p class="small mb-4 mb-lg-0">JL. Bromo Lr. Amal No. 11
                         Medan 20216
                     </p>
                     <hr>
@@ -224,8 +224,6 @@
                             <td>r4d3n92@gmail.com</td>
                         </tr>
                     </table>
-
-
                 </div>
                 <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                     <ul class="list-inline mb-0">
@@ -240,7 +238,7 @@
                         </li>
                     </ul>
                     <ul class="list-inline mb-0">
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2021. All Rights Reserved.</p>
+                        <p class="small mb-4 mb-lg-0">&copy; Your Website 2021. All Rights Reserved.</p>
                     </ul>
 
                 </div>

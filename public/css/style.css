@@ -97,3 +97,12 @@ hr {
 .icon-footer-squer {
   width: 30px;
 }
+
+.footer {
+  background: #357d2c;
+  color: white;
+}
+
+.footer > ul > * {
+  color: white;
+}
