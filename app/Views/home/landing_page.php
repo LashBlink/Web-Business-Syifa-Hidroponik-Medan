@@ -238,7 +238,7 @@
                                 / 0813 7084 8955</td>
                         </tr>
                         <tr>
-                            <td>E-mail: </td>
+                            <td>E-mail</td>
                             <td> : </td>
                             <td>r4d3n92@gmail.com</td>
                         </tr>
