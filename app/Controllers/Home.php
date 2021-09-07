@@ -8,4 +8,18 @@ class Home extends BaseController
 	{
 		return view('/home/landing_page');
 	}
+
+	public function about()
+	{
+		return view('/home/about');
+	}
+
+	public function product()
+	{
+		return view('/home/produk');
+	}
+	public function blog()
+	{
+		return view('/home/blog');
+	}
 }
