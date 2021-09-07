@@ -17,7 +17,7 @@
     <section id="nav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand">Logo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -168,6 +168,25 @@
         </div>
     </section>
 
+    <!-- Review Client -->
+    <section id="banner">
+        <div class="banner">
+            <div class="container">
+                <center>
+                    <h1>Ulasan Client</h1>
+                    <h2 class="text-white">Beberapa ulasan dari Client Kami</h2>
+                    <hr>
+                </center>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/assets/img/image3.png" alt="Card image cap">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <section class="features-icons bg-light">
         <div class="container">
             <div>
@@ -219,7 +238,7 @@
                                 / 0813 7084 8955</td>
                         </tr>
                         <tr>
-                            <td>E-mail</td>
+                            <td>E-mail: </td>
                             <td> : </td>
                             <td>r4d3n92@gmail.com</td>
                         </tr>
@@ -228,7 +247,7 @@
                 <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item me-4">
-                            <a href="#!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png" class="icon-footer"></i></a>
+                            <a href="https://www.youtube.com/channel/UCEG3XFG90tmD-796e8RWpPw"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png" class="icon-footer"></i></a>
                         </li>
                         <li class="list-inline-item me-4">
                             <a href="#!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" class="icon-footer-squer"></i></a>
