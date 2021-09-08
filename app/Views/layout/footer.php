@@ -39,7 +39,7 @@
                         <a href="#!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" class="icon-footer-squer"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" class="icon-footer-squer"></i></a>
+                        <a href="https://web.facebook.com/Syifa-Hidroponik-109758669691901/?ref=page_internal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" class="icon-footer-squer"></i></a>
                     </li>
                 </ul>
                 <ul class="list-inline mb-0">
