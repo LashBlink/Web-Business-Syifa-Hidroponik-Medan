@@ -10,11 +10,15 @@
                 <div class="col">
                     <h1>Syifa Hidroponik Medan</h1>
                     <hr>
-                    <p>Sebuah tempat yang menyediakan perlengkapan dan
-                        segala macam kebutuhan untuk berkebun dengan sistem hidroponik. </p>
+                    <p>
+                        Sebuah tempat yang menyediakan perlengkapan dan
+                        segala macam kebutuhan untuk berkebun dengan sistem hidroponik.
+                    </p>
                     <div class="btn-group">
-                        <a herf="#">
-                            <button type="button" class="btn banner">Lihat Selengkapnya</button>
+                        <a herf="/home/about">
+                            <button type="button" class="btn banner">
+                                Lihat Selengkapnya
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -22,14 +26,13 @@
                     2 of 2
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 <!-- produk& layanan -->
 <section class="features-icons bg-light text-center">
-    <div class="container">
+    <div class="container py-5">
         <div>
             <h1>Produk dan Layanan</h1>
             <br>
@@ -90,7 +93,7 @@
 </section>
 
 <!-- youtube-chanel -->
-<section>
+<section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -125,7 +128,6 @@
             </center>
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="/assets/img/image3.png" alt="Card image cap">
-
             </div>
 
         </div>
@@ -133,7 +135,7 @@
 </section>
 
 
-<section class="features-icons bg-light">
+<section class="features-icons bg-light py-5">
     <div class="container">
         <div>
             <h1>Lastest Blog Post</h1>
@@ -154,7 +156,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 <?= $this->endsection(); ?>

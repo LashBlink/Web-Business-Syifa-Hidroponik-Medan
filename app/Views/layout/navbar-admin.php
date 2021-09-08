@@ -1,7 +1,10 @@
 <!--navbar-->
 <section id="nav">
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-        <a class="navbar-brand">Logo</a>
+        <a class="navbar-brand" style="font-weight: bold;">
+            <img src="/assets/img/logo.png" width="40" height="40"></img>
+            Syifa Hidroponik
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

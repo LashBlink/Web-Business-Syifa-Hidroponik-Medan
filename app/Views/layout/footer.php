@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <div class="row pt-5 pb-5">
+        <div class="row py-5">
             <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                 <!-- <ul class="list-inline mb-2">
                         <li class="list-inline-item"><a href="#!">About</a></li>

@@ -32,10 +32,10 @@
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Produk</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Data Produk</span> 1</a>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Data Produk</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Tambah Produk</span> 2</a>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Tambah Produk</span></a>
                             </li>
                         </ul>
                     </li>
@@ -47,10 +47,10 @@
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Blog Post</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Data Post</span> 1</a>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Data Post</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Tambah Post</span> 2</a>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Tambah Post</span></a>
                             </li>
                         </ul>
                     </li>
