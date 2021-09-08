@@ -16,13 +16,8 @@
     <div class="content">
 
         <?= $this->include('layout/navbar-admin'); ?>
-        <div class="container-fluid">
-            <div class="row flex-nowrap">
-                <?= $this->include('layout/sidebar'); ?>
-                <div class="badan">
-                    <?= $this->renderSection('content'); ?>
-                </div>
-            </div>
+        <div class="badan">
+            <?= $this->renderSection('content'); ?>
         </div>
 
 
