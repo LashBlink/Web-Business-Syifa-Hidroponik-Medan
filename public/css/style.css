@@ -162,3 +162,26 @@ hr {
 .footer > ul > * {
   color: white;
 }
+
+.sidebar {
+  background: rgb(53, 125, 44);
+  background: linear-gradient(
+    180deg,
+    rgba(53, 125, 44, 1) 27%,
+    rgba(102, 197, 89, 1) 100%
+  );
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #f1faf0;
+}
+
+.nav-link:current {
+  font-weight: bold;
+  color: #f1faf0;
+}
