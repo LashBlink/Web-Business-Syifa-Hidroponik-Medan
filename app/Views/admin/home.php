@@ -3,10 +3,17 @@
 <?= $this->section('content'); ?>
 <div class="container-fluid">
     <div class="row flex-nowrap">
+
+        <!-- sidebar -->
         <div class="sidebar col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-
-
+                <div class="profile py-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                    <span class="ms-1 d-none d-sm-inline">Super Admin</span>
+                </div>
                 <hr class="dropdown-divider" style="width: 100%;">
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                     <li class="nav-item">
@@ -51,14 +58,11 @@
 
             </div>
         </div>
+
+        <!-- content -->
         <div class="col py-3">
-            <h3>Left Sidebar with Submenus</h3>
-            <p class="lead">An example 2-level sidebar with collasible menu items. The menu functions like an "accordion" where only a single menu is be open at a time.</p>
-            <ul class="list-unstyled">
-                <li>
-                    <h5>Responsive</h5> shrinks in width, hides text labels and collapses to icons only on mobile
-                </li>
-            </ul>
+            <h3>Halo Admin</h3>
+            <p class="lead">Selamat Datang dibagian sistem managemen website Syifa Hidroponik Medan</p>
         </div>
     </div>
 </div>
