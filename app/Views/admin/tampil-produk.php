@@ -8,7 +8,9 @@
         <div class="col py-3">
             <div>
                 <h1 class="text-capitalize fs-2">Data Produk</h1>
-                <button type="button" class="btn btn-primary">Tambah Produk</button>
+                <a href="/admin/tambahproduk">
+                    <button type="button" class="btn btn-primary">Tambah Produk</button>
+                </a>
             </div>
             <hr>
             <div>

@@ -14,13 +14,11 @@
                         Sebuah tempat yang menyediakan perlengkapan dan
                         segala macam kebutuhan untuk berkebun dengan sistem hidroponik.
                     </p>
-                    <div class="btn-group">
-                        <a herf="/home/about">
-                            <button type="button" class="btn banner">
-                                Lihat Selengkapnya
-                            </button>
-                        </a>
-                    </div>
+                    <a href="/home/about">
+                        <button type="button" class="btn">
+                            Lihat Selengkapnya
+                        </button>
+                    </a>
                 </div>
                 <div class="col">
                     2 of 2
