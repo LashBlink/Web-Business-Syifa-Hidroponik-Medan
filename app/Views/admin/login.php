@@ -25,23 +25,46 @@
             border-top-right-radius: 0px;
 
         }
+
+        .ftco-section {
+            padding: 7em 0;
+        }
+
+        .login-wrap {
+            position: relative;
+            background: #fff;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+            -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+        }
     </style>
 
+    <section class="ftco-section">
+        <div class="container m-auto">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-5">
+                    <div class="login-wrap p-4 p-md-5">
+                        <div class="text-center">
+                            <form style="max-width: 400px; margin:auto;" action="/admin/home" method="POST">
+                                <img class="mt-4 mb-4" src="/assets/img/logo.png" height="72">
+                                <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
+                                <label for="username" class="sr-only"></label>
+                                <input type="text" id="username" class="form-control" placeholder="username" required autofocus>
+                                <label for="password" class="sr-only"></label>
+                                <input type="password" id="password" placeholder="password" class="form-control">
 
-    <div class="text-center">
-        <form style="max-width: 400px; margin:auto;">
-            <img class="mt-4 mb-4" src="/assets/img/logo.png" height="72">
-            <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
-            <label for="username" class="sr-only"></label>
-            <input type="text" id="username" class="form-control" placeholder="username" required autofocus>
-            <label for="password" class="sr-only"></label>
-            <input type="password" id="password" placeholder="password" class="form-control">
-
-            <div class="mt-3">
-                <button type="button" class="btn btn-lg btn-success btn-block">Login</button>
+                                <div class="mt-3">
+                                    <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </form>
-    </div>
+        </div>
+    </section>
+
 
 
 
