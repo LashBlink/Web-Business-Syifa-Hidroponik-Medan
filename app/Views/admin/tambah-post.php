@@ -7,12 +7,12 @@
         <!-- content -->
         <div class="col py-3">
             <div>
-                <p class="fs-3">Tambah Produk</p>
+                <p class="fs-3">Tambah Post Baru</p>
                 <hr>
                 <form action="">
                     <div class="row my-1">
                         <div class="col-md-2">
-                            <p>Nama Produk</p>
+                            <p>Judul Post</p>
                         </div>
                         <div class="col-md-2">
                             <input class="form-control" type="type">
@@ -20,7 +20,7 @@
                     </div>
                     <div class="row my-1">
                         <div class="col-md-2">
-                            <p>Gambar Produk</p>
+                            <p>Gambar Thumbnail</p>
                         </div>
                         <div class="col-md-2">
                             <input class="form-control" type="file">
@@ -28,7 +28,7 @@
                     </div>
                     <div class="row my-1">
                         <div class="col-md-2">
-                            <p>Katagori Produk</p>
+                            <p>Link Video Youtube</p>
                         </div>
                         <div class="col-md-2">
                             <input class="form-control" type="text">
@@ -36,7 +36,7 @@
                     </div>
                     <div class="row my-1">
                         <div class="col-md-2">
-                            <p>Deskripsi Produk</p>
+                            <p>Isi Artikel Blog</p>
                         </div>
                         <div class="col-md-2">
                             <textarea class="form-control" type="text"></textarea>
