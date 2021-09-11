@@ -40,7 +40,8 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex"><img src="/assets/img/jpg1.jpg" class="card-img-top" alt="..."></i></div>
+                    <div class="features-icons-icon d-flex"><img src="/assets/img/alat.png" width="400" height="500"
+                            class="card-img-top" alt="..."></i></div>
                     <br>
                     <h2>Peralatan Hidroponik</h2>
                     <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
@@ -48,7 +49,8 @@
             </div>
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex"><img src="/assets/img/jpg1.jpg" class="card-img-top" alt="..."></i></div>
+                    <div class="features-icons-icon d-flex"><img src="/assets/img/produk.png" width="400" height="500"
+                            class="card-img-top" alt="..."></i></div>
                     <br>
                     <h2>Produk Olahan</h2>
                     <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
@@ -56,7 +58,8 @@
             </div>
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex"><img src="/assets/img/jpg1.jpg" class="card-img-top" alt="..."></i></div>
+                    <div class="features-icons-icon d-flex"><img src="/assets/img/logo.png" width="400" height="500"
+                            class="card-img-top" alt="..."></i></div>
                     <br>
                     <h2>Pemasaran</h2>
                     <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
@@ -70,10 +73,11 @@
 <section>
     <div class="card mb-3">
         <div class="row g-0">
-            <div class="col-md-4">
-                <img src="/assets/img/jpg1.jpg" class="img-fluid rounded-start" alt="...">
+            <div class="col-md-3">
+                <img src="/assets/img/hidroponik.png" width="400" height="400" class="img-fluid rounded-start"
+                    alt="...">
             </div>
-            <div class="col-md-8 bg-dark ">
+            <div class="col-md-9 bg-dark ">
                 <div class="card-body" style="color: azure;">
                     <span style=" vertical-align: middle;">
                         <h1>Apa itu Hidroponik?</h1>
@@ -148,7 +152,8 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">Post title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
