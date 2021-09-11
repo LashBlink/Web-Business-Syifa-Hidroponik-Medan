@@ -7,16 +7,17 @@
         <!-- content -->
         <div class="col py-3">
             <div>
-                <p class="fs-3">Tambah Produk</p>
+                <p class="fs-3">Edit Produk</p>
                 <hr>
-                <form action="/admin/saveproduk" method="POST" enctype="multipart/form-data">
+                <form action="/admin/updateproduk/<?= $produk['kodeproduk']; ?>" method="POST" enctype="multipart/form-data">
                     <?php csrf_field() ?>
+
                     <div class="row my-1">
                         <div class="col-md-2">
                             <p>Nama Produk</p>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="input" name="namaproduk" required>
+                            <input class="form-control" type="input" name="namaproduk" value="<?= $produk['namaproduk']; ?>" required>
                         </div>
                     </div>
                     <div class="row my-1">
@@ -24,7 +25,8 @@
                             <p>Gambar Produk</p>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="file" accept="image/png, image/jpeg" name="gambarproduk" required>
+                            <input class="form-control" type="file" accept="image/png, image/jpeg" name="gambarproduk">
+                            <input class="form-control" type="hidden" name="gambarproduklama" value="<?= $produk['gambarproduk']; ?>">
                         </div>
                     </div>
                     <div class="row my-1">
@@ -33,8 +35,14 @@
                         </div>
                         <div class="col-md-3">
                             <select class="form-select" aria-label="Default select example" name="katagori" required>
+
                                 <?php foreach ($katagori as $p) : ?>
-                                    <option value="<?= $p['kodekatagori'] ?>"><?= $p['katagori']; ?></option>
+                                    <?php if ($p['kodekatagori'] == $produk['kodekatagori']) {
+                                    ?>
+                                        <option value="<?= $p['kodekatagori']; ?>" selected><?= $p['katagori']; ?></option>
+                                    <?php
+                                    } ?>
+                                    <option value="<?= $p['kodekatagori']; ?>"><?= $p['katagori']; ?></option>
                                 <?php endforeach ?>
                             </select>
                         </div>
@@ -44,15 +52,16 @@
                             <p>Deskripsi Produk</p>
                         </div>
                         <div class="col-md-4">
-                            <textarea class="form-control" type="text" name="deskripsi"></textarea>
+                            <textarea class="form-control" type="text" name="deskripsi"><?= $produk['deskripsiproduk']; ?></textarea>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="cols">
-                            <button type="submit" class="btn btn-primary">Tambah</button>
+                            <button type="submit" class="btn btn-primary">Edit</button>
                             <button type="button" class="btn btn-danger">Batal</button>
                         </div>
                     </div>
+
                 </form>
 
             </div>
