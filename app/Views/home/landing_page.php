@@ -58,8 +58,8 @@
             </div>
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex"><img src="/assets/img/pemasaran.png" width="400"
-                            height="500" class="card-img-top" alt="..."></i></div>
+                    <div class="features-icons-icon d-flex"><img src="/assets/img/logo.png" width="400" height="500"
+                            class="card-img-top" alt="..."></i></div>
                     <br>
                     <h2>Pemasaran</h2>
                     <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
