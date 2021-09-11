@@ -19,7 +19,7 @@
                             Produk
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="home/product">Semua Produk</a></li>
+                            <li><a class="dropdown-item" href="/home/product">Semua Produk</a></li>
                             <li>
                                 <hr class="dropdown-divider" style="width: 100%;">
                             </li>
