@@ -93,13 +93,13 @@
 <!-- youtube-chanel -->
 <section class="py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
+        <div class="row g-0">
+            <div class="col-md-6">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/pMk24G6b540" allowfullscreen></iframe>
+                    <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/pMk24G6b540" style="max-width: 100%;" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <span style=" vertical-align: middle;">
                     <h1>Free video Tutorial</h1>
                     <hr class=" bg-light">

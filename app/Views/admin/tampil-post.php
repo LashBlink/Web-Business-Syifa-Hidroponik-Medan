@@ -12,44 +12,54 @@
                 <a href="/admin/tambahpost">
                     <button type="button" class="btn btn-primary">Tambah Postingan Baru</button>
                 </a>
+                <?php if (session()->getFlashdata('pesan')) : ?>
+                    <div class="alert alert-success mt-3" role="alert">
+                        <?= session()->getFlashdata('pesan') ?>
+                    </div>
+                <?php endif ?>
+
             </div>
 
-            <hr style="width: 100%">
+            <hr>
             <div>
-                <div class="container">
-                    <br>
 
-                    <div class="card mb-2">
-                        <div class="row g-0">
-                            <div class="col-md-2">
-                                <img src="/assets/img/jpg1.jpg" class="img-fluid rounded-start" alt="...">
+                <?php
+                foreach ($post as $p) :
+                ?>
+                    <div class="card mb-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="/assets/uploadimg/<?= $p['gambar']; ?>" class="img-fluid rounded-start" alt="...">
                             </div>
-
-                            <div class="col-md-6">
+                            <div class="col-md-6 bg-light ">
                                 <div class="card-body">
-                                    <h5 class="card-title">Post title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <span>
+                                        <h1><?= $p['judul']; ?></h1>
+                                        <hr class=" bg-light">
+                                        <p class="card-text"><?= $p['deskripsi']; ?></p>
+                                        <br>
+                                    </span>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card-body">
-                                    <a href="" class="btn btn-primary">Edit</a>
-                                    <a href="" onclick="return confirm('Apakah Anda Yakin ?')"
-                                        class="btn btn-danger">Hapus</a>
+                            <div class="col-md-2 m-auto">
+                                <div class="cols mx-center">
+                                    <a href="/admin/editpost/<?= $p['judul'] ?>">
+                                        <button type="button" class="btn btn-primary">edit</button>
+                                    </a>
+                                    <form action="/admin/deletepost/<?= $p['id']; ?>" class="d-inline">
+                                        <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin ingin mengahpus postingan ini?')">hapus</button>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-
-
+                <?php endforeach
+                ?>
 
             </div>
         </div>
     </div>
-</div>
 </div>
 <?= $this->endsection(); ?>
