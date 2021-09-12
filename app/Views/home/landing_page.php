@@ -71,7 +71,7 @@
     <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-3">
-                <img src="/assets/img/hidroponik.png" width="400" height="400" class="img-fluid rounded-start" alt="...">
+                <img src="/assets/img/hidroponik.png" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-9 bg-dark ">
                 <div class="card-body" style="color: azure;">

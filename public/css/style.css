@@ -198,3 +198,13 @@ hr {
   font-weight: bold;
   color: #f1faf0;
 }
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+}

@@ -38,7 +38,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sosial Media</a>
+                        <a class="nav-link active" aria-current="page" href="/home/blog">Berita</a>
                     </li>
                 </ul>
             </div>

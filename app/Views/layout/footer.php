@@ -1,17 +1,8 @@
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer mt-auto">
     <div class="container">
         <div class="row py-5">
             <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                <!-- <ul class="list-inline mb-2">
-                        <li class="list-inline-item"><a href="#!">About</a></li>
-                        <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Contact</a></li>
-                        <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                        <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
-                    </ul> -->
                 <p class="small mb-4 mb-lg-0">JL. Bromo Lr. Amal No. 11
                     Medan 20216
                 </p>

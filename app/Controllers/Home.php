@@ -3,14 +3,18 @@
 namespace App\Controllers;
 
 use App\Models\BlogpostModel;
+use App\Models\ProdukModel;
 
 class Home extends BaseController
 {
 
 	protected $blogpost;
+	protected $produk;
+
 	public function __construct()
 	{
 		$this->blogpost = new BlogpostModel();
+		$this->produk = new ProdukModel();
 	}
 	public function index()
 	{
@@ -24,7 +28,25 @@ class Home extends BaseController
 
 	public function product()
 	{
-		return view('/home/produk');
+		$data = [
+			'produk' => $this->produk->getproduk()
+		];
+
+		return view('/home/produk', $data);
+	}
+
+	public function detailproduk($namaproduk)
+	{
+		$data = [
+			'produk' => $this->produk->getproduk($namaproduk)
+		];
+
+		//jika data tidak ada di tabel
+		if (empty($data['produk'])) {
+			throw new \CodeIgniter\Exceptions\PageNotFoundException('Produk ' . $namaproduk . ' tidak ditemukan');
+		}
+
+		return view('/home/detailproduk', $data);
 	}
 
 	public function blog()
