@@ -17,4 +17,9 @@ class BlogpostModel extends Model
 
         return $this->where(['judul' => $judul])->first();
     }
+
+    public function getBlogpost3($judul = false)
+    {
+        return $this->findAll(3);
+    }
 }

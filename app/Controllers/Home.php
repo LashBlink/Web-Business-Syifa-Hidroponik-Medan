@@ -18,7 +18,11 @@ class Home extends BaseController
 	}
 	public function index()
 	{
-		return view('/home/landing_page');
+		$data = [
+			'post' => $this->blogpost->getBlogpost3()
+		];
+
+		return view('/home/landing_page', $data);
 	}
 
 	public function about()

@@ -7,7 +7,7 @@
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col m-auto">
                     <h1>Syifa Hidroponik Medan</h1>
                     <hr>
                     <p>
@@ -21,7 +21,8 @@
                     </a>
                 </div>
                 <div class="col">
-                    2 of 2
+                    <img src="/assets/img/banner.png" class="img-fluid" alt="">
+                    </svg>
                 </div>
             </div>
         </div>
@@ -140,21 +141,39 @@
         </div>
         <br>
 
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="/assets/img/jpg1.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Post title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <?php
+        foreach ($post as $p) :
+        ?>
+            <a href="/home/detailblog/<?= $p['judul']; ?>" style=" text-decoration:none; color : black;">
+                <div class="card mb-3">
+                    <div class="row g-0 h-1">
+                        <div class="col-md-4">
+                            <img src="/assets/uploadimg/<?= $p['gambar'] ?>" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 bg-light ">
+                            <div class="card-body">
+                                <span>
+                                    <h1><?= $p['judul']; ?></h1>
+                                    <hr class=" bg-light">
+                                    <p class="card-text"><?= $p['deskripsi']; ?></p>
+                                    <br>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
+        <?php endforeach
+        ?>
+        <div class="fs-8 fw-bold text-center">
+            <a href="/home/blog" style="color: green;">
+                Berita lainnya...
+            </a>
         </div>
     </div>
+</section>
+
+<section>
+    <div style="padding-bottom: 5em;"></div>
 </section>
 <?= $this->endsection(); ?>
