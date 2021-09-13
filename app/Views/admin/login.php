@@ -48,7 +48,7 @@
                         <div class="text-center">
                             <form style="max-width: 400px; margin:auto;" action="/admin/home" method="POST">
                                 <img class="mt-4 mb-4" src="/assets/img/logo.png" height="72">
-                                <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
+                                <h1 class="h3 mb-3 font-weight-normal">Silahkan Login</h1>
                                 <label for="username" class="sr-only"></label>
                                 <input type="text" id="username" class="form-control" placeholder="username" required autofocus>
                                 <label for="password" class="sr-only"></label>
