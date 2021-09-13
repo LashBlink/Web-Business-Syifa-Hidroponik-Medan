@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="footer mt-auto">
     <div class="container">
-        <div class="row py-5">
+        <div class="row py-1">
             <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                 <p class="small mb-4 mb-lg-0">JL. Bromo Lr. Amal No. 11
                     Medan 20216
