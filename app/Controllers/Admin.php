@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\AdminModel;
 use App\Models\BlogpostModel;
 use App\Models\KatagoriModel;
 use App\Models\ProdukModel;
@@ -13,12 +14,14 @@ class Admin extends BaseController
 	protected $blogpost;
 	protected $produk;
 	protected $katagori;
+	protected $admin;
 
 	public function __construct()
 	{
 		$this->blogpost = new BlogpostModel();
 		$this->produk = new ProdukModel();
 		$this->katagori = new KatagoriModel();
+		$this->admin = new AdminModel();
 	}
 
 	public function index()
@@ -26,13 +29,51 @@ class Admin extends BaseController
 		return view('/admin/login');
 	}
 
+	public function ceklogin()
+	{
+		$username = $this->request->getPost('username');
+		$password = $this->request->getPost('password');
+
+		$user = $this->admin->ceklogin($username, $password);
+		$pegawai = $this->admin->ceklogin($username, $password);
+
+		if (($pegawai['username'] == $username) && ($pegawai['password'] == $password)) {
+			session()->set('username', $pegawai['username']);
+			session()->set('password', $pegawai['password']);
+
+			return redirect()->to('/admin/home');
+		} else {
+			session()->setFlashdata('gagallogin', 'Username atau Password salah, silahkan coba lagi!!');
+			return redirect()->to('/admin');
+		}
+	}
+
+	public function logout()
+	{
+		session()->destroy();
+		session()->setFlashdata('logout', 'anda telah logout');
+		return redirect()->to('/admin');
+	}
+
 	public function home()
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 		return view('/admin/home');
 	}
 
 	public function tampilproduk()
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 		$data = [
 			'produk' => $this->produk->getproduk()
 		];
@@ -42,6 +83,12 @@ class Admin extends BaseController
 
 	public function tambahproduk()
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 		$data = [
 			'katagori' => $this->katagori->getKatagori()
 		];
@@ -51,6 +98,12 @@ class Admin extends BaseController
 
 	public function saveproduk()
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 		$file = $this->request->getFile('gambarproduk');
 		$file->move('assets/uploadimg');
 		$gambar = $file->getName();
@@ -68,7 +121,12 @@ class Admin extends BaseController
 	}
 
 	public function editproduk($namaproduk)
-	{
+	{ //auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 		$data = [
 			'produk' => $this->produk->getproduk($namaproduk),
 			'katagori' => $this->katagori->getKatagori()
@@ -78,6 +136,11 @@ class Admin extends BaseController
 
 	public function updateproduk($kodeproduk)
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
 
 		$file = $this->request->getFile('gambarproduk');
 
@@ -105,6 +168,12 @@ class Admin extends BaseController
 
 	public function deleteproduk($kodeproduk)
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 		$produk = $this->produk->find($kodeproduk);
 
 		$this->produk->delete($kodeproduk);
@@ -116,6 +185,12 @@ class Admin extends BaseController
 
 	public function tampilpost()
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 		$data = [
 			'post' => $this->blogpost->getBlogpost()
 		];
@@ -125,12 +200,25 @@ class Admin extends BaseController
 
 	public function tambahpost()
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 
 		return view('/admin/tambah-post');
 	}
 
 	public function savepost()
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
+
 		$file = $this->request->getFile('gambar');
 		$file->move('assets/uploadimg');
 		$gambar = $file->getName();
@@ -149,6 +237,13 @@ class Admin extends BaseController
 
 	public function editpost($judul)
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
+
 		$data = [
 			'post' => $this->blogpost->getBlogpost($judul)
 		];
@@ -158,6 +253,12 @@ class Admin extends BaseController
 
 	public function update($id)
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
 
 		$file = $this->request->getFile('gambar');
 
@@ -186,6 +287,13 @@ class Admin extends BaseController
 
 	public function deletepost($id)
 	{
+		//auth
+		if (session()->get('username') == '') {
+			session()->setFlashdata('gagal', 'Anda Belum Login !!!');
+			return redirect()->to('/admin');
+		}
+
+
 		$post = $this->blogpost->find($id);
 
 		unlink('assets/uploadimg/' . $post['gambar']);

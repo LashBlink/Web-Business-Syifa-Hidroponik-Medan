@@ -46,13 +46,28 @@
                 <div class="col-md-7 col-lg-5">
                     <div class="login-wrap p-4 p-md-5">
                         <div class="text-center">
-                            <form style="max-width: 400px; margin:auto;" action="/admin/home" method="POST">
+                            <form style="max-width: 400px; margin:auto;" action="/admin/ceklogin" method="POST">
                                 <img class="mt-4 mb-4" src="/assets/img/logo.png" height="72">
                                 <h1 class="h3 mb-3 font-weight-normal">Silahkan Login</h1>
+                                <?php if (session()->getFlashdata('gagallogin')) { ?>
+                                    <div class="alert alert-danger mt-3" role="alert">
+                                        <?= session()->getFlashdata('gagallogin') ?>
+                                    </div>
+                                <?php }
+                                if (session()->getFlashdata('gagal')) { ?>
+                                    <div class="alert alert-danger mt-3" role="alert">
+                                        <?= session()->getFlashdata('gagal') ?>
+                                    </div>
+                                <?php }
+                                if (session()->getFlashdata('logout')) { ?>
+                                    <div class="alert alert-danger mt-3" role="alert">
+                                        <?= session()->getFlashdata('logout') ?>
+                                    </div>
+                                <?php } ?>
                                 <label for="username" class="sr-only"></label>
-                                <input type="text" id="username" class="form-control" placeholder="username" required autofocus>
+                                <input type="text" id="username" class="form-control" placeholder="username" name="username" required autofocus>
                                 <label for="password" class="sr-only"></label>
-                                <input type="password" id="password" placeholder="password" class="form-control">
+                                <input type="password" id="password" placeholder="password" name="password" class="form-control">
 
                                 <div class="mt-3">
                                     <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>

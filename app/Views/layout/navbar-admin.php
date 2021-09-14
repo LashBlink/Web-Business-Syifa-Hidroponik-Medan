@@ -19,7 +19,7 @@
                                     Profile
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/admin">keluar</a></li>
+                                    <li><a class="dropdown-item" href="/admin/logout">keluar</a></li>
                                 </ul>
                             </li>
 
