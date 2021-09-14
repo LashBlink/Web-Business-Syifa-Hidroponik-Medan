@@ -11,7 +11,7 @@
             <?php
             foreach ($produk as $p) :
             ?>
-                <a href="/home/detailproduk/<?= $p['namaproduk'] ?>" style=" text-decoration:none; color : black;">
+                <a href="/home/detailproduk/<?= $p['namaproduk'] ?>" style=" text-decoration:none; color: black;">
                     <div class="col">
                         <div class="card h-100">
                             <img src="/assets/uploadimg/<?= $p['gambarproduk']; ?>" class="card-img-top" style="height: 15em; width: auto;">

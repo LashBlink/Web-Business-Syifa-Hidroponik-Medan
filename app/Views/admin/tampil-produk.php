@@ -28,8 +28,8 @@
                     ?>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="/assets/uploadimg/<?= $p['gambarproduk']; ?>" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <img src="/assets/uploadimg/<?= $p['gambarproduk']; ?>" class="card-img-top" style="height: 15em; width: auto;">
+                                <div class=" card-body">
                                     <h5 class="card-title"><?= $p['namaproduk']; ?></h5>
                                     <p class="card-text col-6 fw-bold">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
