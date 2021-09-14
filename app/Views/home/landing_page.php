@@ -147,8 +147,8 @@
             <a href="/home/detailblog/<?= $p['judul']; ?>" style=" text-decoration:none; color : black;">
                 <div class="card mb-3">
                     <div class="row g-0 h-1">
-                        <div class="col-md-4">
-                            <img src="/assets/uploadimg/<?= $p['gambar'] ?>" class="img-fluid rounded-start" alt="...">
+                        <div class="col-md-2">
+                            <img src="/assets/uploadimg/<?= $p['gambar'] ?>" class="img-fluid rounded-start" alt="..." style="width:200px;height:200px;">
                         </div>
                         <div class="col-md-8 bg-light ">
                             <div class="card-body">
