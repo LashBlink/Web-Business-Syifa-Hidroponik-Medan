@@ -106,7 +106,7 @@
                     <hr class=" bg-light">
                     <p class="card-text" style="font-size: 32px;">Ikuti kami di Youtube untuk melihat perkembangan kami
                         dan dapatkan video tutorial gratis cara memanan hidroponik.</p>
-                    <a href="">
+                    <a href="https://www.youtube.com/channel/UCEG3XFG90tmD-796e8RWpPw?sub_confirmation=1" target="_blank">
                         <img class="subscribe" src="https://freesvg.org/img/Subscribe.png">
                     </a>
 
