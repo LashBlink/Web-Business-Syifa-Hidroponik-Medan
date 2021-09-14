@@ -33,7 +33,6 @@ h4,
 h5 {
   font-weight: 600;
   color: #444;
-  padding: 0 0 10px;
 }
 
 h2,
@@ -63,7 +62,6 @@ h3 {
 #bannerpost {
   position: relative;
   text-align: left;
-  background-image: url("/assets/img/jpg1.jpg");
 
   color: white;
   padding-top: 10%;
@@ -72,6 +70,28 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#review {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(53, 125, 44, 1) 27%,
+    rgba(102, 197, 89, 1) 100%
+  );
+
+  /* background-image: url("/assets/img/hidroponik.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#review > .banner > .container svg {
+  margin: auto;
+  display: block;
 }
 
 .text-banner {
@@ -215,4 +235,13 @@ hr {
 
   color: white;
   text-align: center;
+}
+.review {
+  margin: auto;
+}
+
+.stars {
+  display: inline-flex;
+  position: relative;
+  top: 4px;
 }

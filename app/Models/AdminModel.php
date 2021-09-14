@@ -10,12 +10,10 @@ class AdminModel extends Model
 
     protected $primaryKey = 'username';
 
-    public function getProduk($username = false)
+    public function getAdmin($username = false)
     {
         if ($username == false) {
-            return $this->db->table('produk')
-                ->join('katagori', 'katagori.kodekatagori = produk.kodekatagori')
-                ->get()->getResultArray();
+            return $this->findAll();
         }
 
         return $this->where(['username' => $username])->first();

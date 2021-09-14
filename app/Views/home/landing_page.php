@@ -44,7 +44,7 @@
                     <div class="features-icons-icon d-flex"><img src="/assets/img/alat.png" width="400" height="500" class="card-img-top" alt="..."></i></div>
                     <br>
                     <h2>Peralatan Hidroponik</h2>
-                    <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+                    <p class="lead mb-0"></p>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -52,7 +52,7 @@
                     <div class="features-icons-icon d-flex"><img src="/assets/img/produk.png" width="400" height="500" class="card-img-top" alt="..."></i></div>
                     <br>
                     <h2>Produk Olahan</h2>
-                    <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
+                    <p class="lead mb-0"></p>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -60,7 +60,7 @@
                     <div class="features-icons-icon d-flex"><img src="/assets/img/logo.png" width="400" height="500" class="card-img-top" alt="..."></i></div>
                     <br>
                     <h2>Pemasaran</h2>
-                    <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                    <p class="lead mb-0"></p>
                 </div>
             </div>
         </div>
@@ -117,20 +117,108 @@
 </section>
 
 <!-- Review Client -->
-<section id="banner">
+<section id="review">
     <div class="banner">
-        <div class="container">
+        <div class="container mx-auto">
             <center>
                 <h1>Ulasan Client</h1>
                 <h2 class="text-white">Beberapa ulasan dari Client Kami</h2>
                 <hr>
             </center>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/assets/img/image3.png" alt="Card image cap">
-            </div>
+            <div class="row row row-cols-1 row-cols-md-5 g-4 py-4">
+                <div class="card mb-3 mx-3 col-4" style="max-width: 400px;">
+                    <div class="row g-0">
+                        <div class="col-md-2 mt-3">
+                            <img src="https://lh3.googleusercontent.com/a-/AOh14GiL3sutV_20Fl_FuTB2rlvccf864nZMgmN_b6FNHfk=s40-c-c0x00000000-cc-rp-mo-ba4-br100" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Bismi Aziza</h5>
+                                <div class="stars card-title">
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <p class="card-text mt-3" style="color: black;">Ramah, ada inovasi produknya. Gk pelit ilmu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mx-3 col-4" style="max-width: 400px;">
+                    <div class="row g-0">
+                        <div class="col-md-2 mt-3">
+                            <img src="https://lh3.googleusercontent.com/a-/AOh14Gg0R4JF2LRwXURI6U8Z-cOvEEJOzq3K6-4QcrQP_w=s40-c-c0x00000000-cc-rp-mo-ba4-br100" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Marzuki Halim</h5>
+                                <div class="stars card-title">
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <p class="card-text mt-3" style="color: black;">Banyak sayur yang sehat disini. Ada juga jual pupuk kompos, berbagai bibit. Dll</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mx-3 col-4" style="max-width: 400px;">
+                    <div class="row g-0">
+                        <div class="col-md-2 mt-3">
+                            <img src="https://lh3.googleusercontent.com/a-/AOh14GjuTLPQas3cjP0fQUdIe-wOQhwqfCO9SMIjwWkA0Q=s40-c-c0x00000000-cc-rp-mo-ba3-br100" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Regionaldi Aritonang</h5>
+                                <div class="stars card-title">
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg class="row" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path class="col" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <p class="card-text mt-3" style="color: black;">Ini adalah tempat PKL kami sekaligus tunjangan dalam pola fikir mengambil teknik pertanian kedepannya, yaitu Mode Hidroponik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
-    </div>
 </section>
 
 
