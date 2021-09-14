@@ -28,10 +28,10 @@
                 ?>
                     <div class="card mb-3">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="/assets/uploadimg/<?= $p['gambar']; ?>" class="img-fluid rounded-start" alt="..." style="width:200px;height:250px;">
+                            <div class="col-md-2">
+                                <img src="/assets/uploadimg/<?= $p['gambar']; ?>" class="img-fluid rounded-start" alt="..." style="width:200px;height:200px;">
                             </div>
-                            <div class="col-md-6 bg-light ">
+                            <div class="col-md-8 bg-light ">
                                 <div class="card-body">
                                     <span>
                                         <h1><?= $p['judul']; ?></h1>
@@ -44,10 +44,10 @@
                             <div class="col-md-2 m-auto">
                                 <div class="cols mx-center">
                                     <a href="/admin/editpost/<?= $p['judul'] ?>">
-                                        <button type="button" class="btn btn-primary">edit</button>
+                                        <button type="button" class="btn btn-primary btn-lg">edit</button>
                                     </a>
                                     <form action="/admin/deletepost/<?= $p['id']; ?>" class="d-inline">
-                                        <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin ingin mengahpus postingan ini?')">hapus</button>
+                                        <button type="submit" class="btn btn-danger btn-lg" onclick="return confirm('apakah anda yakin ingin mengahpus postingan ini?')">hapus</button>
                                     </form>
 
                                 </div>
