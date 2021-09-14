@@ -35,11 +35,10 @@ class Admin extends BaseController
 		$password = $this->request->getPost('password');
 
 		$user = $this->admin->ceklogin($username, $password);
-		$pegawai = $this->admin->ceklogin($username, $password);
 
-		if (($pegawai['username'] == $username) && ($pegawai['password'] == $password)) {
-			session()->set('username', $pegawai['username']);
-			session()->set('password', $pegawai['password']);
+		if (($user['username'] == $username) && ($user['password'] == $password)) {
+			session()->set('username', $user['username']);
+			session()->set('password', $user['password']);
 
 			return redirect()->to('/admin/home');
 		} else {
