@@ -29,7 +29,7 @@
                     <div class="card mb-3">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="/assets/uploadimg/<?= $p['gambar']; ?>" class="img-fluid rounded-start" alt="..." style="width:200px;height:250px;">
+                                <img src="/assets/uploadimg/<?= $p['gambar']; ?>" class="img-fluid rounded-start" alt="..." style="width:250px;height:250px;">
                             </div>
                             <div class="col-md-6 bg-light ">
                                 <div class="card-body">
