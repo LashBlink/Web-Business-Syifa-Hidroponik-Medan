@@ -2,7 +2,7 @@
 <section id="nav">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" style="font-weight: bold;">
+            <a class="navbar-brand" style="font-weight: bold;" href="/">
                 <img src="/assets/img/logo.png" width="40" height="40"></img>
                 Syifa Hidroponik
             </a>
