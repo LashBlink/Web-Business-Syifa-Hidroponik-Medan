@@ -39,7 +39,7 @@
             <div class="col-md-4">
                 <img src="/assets/img/jpg1.jpg" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-8" style="background: #24475B;">
+            <div class="col-md-8" style="background: #24475B;  margin-bottom: 150px;">
                 <div class="card-body" style="color: azure;">
                     <span>
                         <h1>Sejarah</h1>
