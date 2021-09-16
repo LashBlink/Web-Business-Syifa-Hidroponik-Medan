@@ -3,18 +3,22 @@
 namespace App\Controllers;
 
 use App\Models\BlogpostModel;
+use App\Models\KatagoriModel;
 use App\Models\ProdukModel;
+use App\Models\ProdukKatagori;
 
 class Home extends BaseController
 {
 
 	protected $blogpost;
 	protected $produk;
+	protected $katagori;
 
 	public function __construct()
 	{
 		$this->blogpost = new BlogpostModel();
 		$this->produk = new ProdukModel();
+		$this->katagori = new KatagoriModel();
 	}
 	public function index()
 	{
@@ -33,7 +37,18 @@ class Home extends BaseController
 	public function product()
 	{
 		$data = [
-			'produk' => $this->produk->getproduk()
+			'produk' => $this->produk->getProduk(),
+			'katagori' => $this->katagori->getKatagori()
+		];
+
+		return view('/home/produk', $data);
+	}
+
+	public function producttag($katagori)
+	{
+		$data = [
+			'produk' => $this->produk->getProduktag($katagori),
+			'katagori' => $this->katagori->getKatagori()
 		];
 
 		return view('/home/produk', $data);

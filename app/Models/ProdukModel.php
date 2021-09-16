@@ -20,4 +20,12 @@ class ProdukModel extends Model
 
         return $this->where(['namaproduk' => $namaproduk])->first();
     }
+
+    public function getProduktag($katagori = false)
+    {
+        return $this->db->table('produk')
+            ->join('katagori', 'katagori.kodekatagori = produk.kodekatagori')
+            ->where(['produk.kodekatagori' => $katagori])
+            ->get()->getResultArray();
+    }
 }

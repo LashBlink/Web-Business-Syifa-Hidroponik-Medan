@@ -7,6 +7,19 @@
         <div class="title py-1">
             Produk Syifa Hidroponik
         </div>
+        <div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter Katagori
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="/home/product">Semua</a></li>
+                    <?php foreach ($katagori as $k) : ?>
+                        <li><a class="dropdown-item" href="/home/producttag/<?= $k['kodekatagori']; ?>"><?= $k['katagori']  ?></a></li>
+                    <?php endforeach ?>
+                </ul>
+            </div>
+        </div>
         <div class="row row-cols-1 row-cols-md-5 g-4 py-4">
             <?php
             foreach ($produk as $p) :

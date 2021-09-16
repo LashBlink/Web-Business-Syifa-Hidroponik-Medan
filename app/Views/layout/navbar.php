@@ -23,8 +23,8 @@
                             <li>
                                 <hr class="dropdown-divider" style="width: 100%;">
                             </li>
-                            <li><a class="dropdown-item" href="#">Produk Olahan</a></li>
-                            <li><a class="dropdown-item" href="#">Peralatan hidroponik</a></li>
+                            <li><a class="dropdown-item" href="/home/producttag/1">Produk Olahan</a></li>
+                            <li><a class="dropdown-item" href="/home.producttag/7">Peralatan hidroponik</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
