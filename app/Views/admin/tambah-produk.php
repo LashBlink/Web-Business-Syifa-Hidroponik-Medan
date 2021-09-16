@@ -50,7 +50,7 @@
                     <div class="row mt-5">
                         <div class="cols">
                             <button type="submit" class="btn btn-primary">Tambah</button>
-                            <button type="button" class="btn btn-danger">Batal</button>
+                            <button type="button" class="btn btn-danger" onClick="javascript:window.location.href='/admin/tampilproduk'">Batal</button>
                         </div>
                     </div>
                 </form>
