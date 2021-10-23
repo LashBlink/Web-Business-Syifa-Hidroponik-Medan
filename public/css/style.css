@@ -245,3 +245,7 @@ hr {
   position: relative;
   top: 4px;
 }
+
+.cart-img {
+  width: 50px;
+}

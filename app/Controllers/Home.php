@@ -19,6 +19,8 @@ class Home extends BaseController
 		$this->blogpost = new BlogpostModel();
 		$this->produk = new ProdukModel();
 		$this->katagori = new KatagoriModel();
+		helper('number');
+		helper('form');
 	}
 	public function index()
 	{
@@ -36,9 +38,13 @@ class Home extends BaseController
 
 	public function product()
 	{
+		$cart = \Config\Services::cart();
+
 		$data = [
 			'produk' => $this->produk->getProduk(),
-			'katagori' => $this->katagori->getKatagori()
+			'katagori' => $this->katagori->getKatagori(),
+			'cart' => $cart->contents(),
+			'totalitem' => $cart->totalItems()
 		];
 
 		return view('/home/produk', $data);
